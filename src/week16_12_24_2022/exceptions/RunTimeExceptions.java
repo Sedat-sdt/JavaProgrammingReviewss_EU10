@@ -8,8 +8,13 @@ public class RunTimeExceptions {
 
     public static void main(String[] args) {
 //ArithmeticException
-        for (int i = 5; i >= 1; i--) {
-            System.out.println(60 / i);  //java.lang.ArithmeticException
+        try {
+            for (int i = 5; i >= 1; i--) {
+                System.out.println(60 / i);  //java.lang.ArithmeticException
+            }
+        } catch (Exception e) {
+           // e.getMessage(); simple message
+          //  e.printStackTrace();detailed message
         }
 //NullPointerException
 //You can not reach instance variables or methods from the static block or method
